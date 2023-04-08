@@ -52,5 +52,33 @@ public class Main {
         System.out.println("За " + threeDaysMashine + " суток машина произвела " + time3 + " штук бутылок");
         System.out.println("За " + oneMonthMashine + " дней машина произвела " + time4 + " штук бутылок");
 
+        int aTinOfPaint = 120;
+        int whitePaintCanInClass = 2;
+        int brownPaintCanInClass = 4;
+        int paintCanInClass = whitePaintCanInClass + brownPaintCanInClass;
+        int classes = aTinOfPaint / paintCanInClass;
+        int needWhitePaintCan = whitePaintCanInClass * classes;
+        int needBrownPaintCan = brownPaintCanInClass * classes;
+        System.out.println("В школе, где " + classes + " классов, нужно " + needWhitePaintCan + " банок белой краски и " + needBrownPaintCan + " банок коричневой краски");
+
+        int weightOneBanana = 80;
+        int bananas = 5;
+        int weightFiveBananas = bananas * weightOneBanana;
+        int milk = 200;
+        int oneHundredGramsOfMilk = 105;
+        int twoHundredGramsOfMilk = milk * oneHundredGramsOfMilk;
+        int iceCreamSundae = 2;
+        int iceCreamBriquetteWeight = 100;
+        int weightIceCream = iceCreamSundae * iceCreamBriquetteWeight;
+        int rawEggs = 4;
+        int rawEggWeight = 70;
+        int rawEggsWeight = rawEggWeight * rawEggs;
+        int weightBreakfast = weightFiveBananas + twoHundredGramsOfMilk + weightIceCream + rawEggsWeight;
+        int grPerKg = 1000;
+        float weightBreakfastInKilo = weightBreakfast / (float)grPerKg;
+        System.out.println("Вес завтрака спортсмена " + weightBreakfast + " грамм");
+        System.out.println("Вес завтрака спортсмена " + weightBreakfastInKilo + " килограмм");
+
+
     }
 }
