@@ -79,6 +79,28 @@ public class Main {
         System.out.println("Вес завтрака спортсмена " + weightBreakfast + " грамм");
         System.out.println("Вес завтрака спортсмена " + weightBreakfastInKilo + " килограмм");
 
+        int lostWeightInKilo = 7;
+        int lostWeightInGram = lostWeightInKilo * 1000;
+        int lostWeightInDay1 = 250;
+        int lostWeightInDay2 = 500;
+        int days1 = lostWeightInGram / lostWeightInDay1;
+        int days2 = lostWeightInGram / lostWeightInDay2;
+        System.out.println("Чтобы спортсмену сбросить " + lostWeightInKilo + " кг, если спортсмен соблюдает рацион так, чтоб терять в весе " + lostWeightInDay1 + " грамм в день, он похудеет через "+ days1 + " дней");
+        System.out.println("Чтобы спортсмену сбросить " + lostWeightInKilo + " кг, если спортсмен соблюдает рацион так, чтоб терять в весе " + lostWeightInDay2 + " грамм в день, он похудеет через "+ days2 + " дней");
+
+        int salaryMasha1 = 67760;
+        int salaryDenis1 = 83690;
+        int salaryKristine1 = 76230;
+        double salarySupplement = 0.1;
+        double salarySupplementMasha = salaryMasha1 * salarySupplement;
+        double salarySupplementDenis = salaryDenis1 * salarySupplement;
+        double salarySupplementKristine = salaryKristine1 * salarySupplement;
+        double salaryMasha2 = salaryMasha1 + salarySupplementMasha;
+        double salaryDenis2 = salaryDenis1 + salarySupplementDenis;
+        double salaryKristine2 = salaryKristine1 + salarySupplementKristine;
+        System.out.println("Маша теперь получает " + salaryMasha2 + " рублей. Годовой доход вырос на " + salarySupplementMasha + " рублей");
+        System.out.println("Денис теперь получает " + salaryDenis2 + " рублей. Годовой доход вырос на " + salarySupplementDenis + " рублей");
+        System.out.println("Кристина теперь получает " + salaryKristine2 + " рублей. Годовой доход вырос на " + salarySupplementKristine + " рублей");
 
     }
 }
