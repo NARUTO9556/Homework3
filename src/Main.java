@@ -30,5 +30,27 @@ public class Main {
         System.out.println(price);
         System.out.println(pence);
 
+        byte ludmilaPavlovna = 23;
+        byte annaSergeevna = 27;
+        byte ekaterinaAndreevna = 30;
+        short paper = 480;
+        int students = ludmilaPavlovna + annaSergeevna + ekaterinaAndreevna;
+        int paperStudent = paper / students;
+        System.out.println("На каждего ученика рассчитано " + paperStudent + " листов бумаги");
+
+        byte oneMinuteMashine = 8;
+        int twentyMinuteMashine = 20;
+        int time1 = oneMinuteMashine * twentyMinuteMashine;
+        int oneDayMashine = 1440;
+        int time2 = oneMinuteMashine * oneDayMashine;
+        int threeDaysMashine =3;
+        int time3 = time2 * threeDaysMashine;
+        int oneMonthMashine = 30;
+        int time4 = time2 * oneMonthMashine;
+        System.out.println("За " + twentyMinuteMashine + " минут машина произвела " + time1 + " штук бутылок");
+        System.out.println("За " + oneDayMashine + " минут машина произвела " + time2 + " штук бутылок");
+        System.out.println("За " + threeDaysMashine + " суток машина произвела " + time3 + " штук бутылок");
+        System.out.println("За " + oneMonthMashine + " дней машина произвела " + time4 + " штук бутылок");
+
     }
 }
